@@ -5,9 +5,15 @@
 
 #     number //= 2 # Ogmented assignment operator
 
-command = ""
+# command = ""
 
-while command.lower() != "quit":
-    command = input("> ")
+# while command.lower() != "quit":
+#     command = input("> ")
 
-    print("ECHO:", command)
+#     print("ECHO:", command)
+
+for number in range(1, 11):
+    if number % 2:
+        print("Odd:", number)
+    else:
+        print("Even:", number)
