@@ -7,6 +7,7 @@ for number in range(1, 6): # Repeated 5 times
     print("Attempt", number, number * ".")
 
 
+# FOR ELSE LOOP
 successful = False
 
 for number in range(5):
@@ -17,3 +18,8 @@ for number in range(5):
         break # Exit automatically in loop
 else:
     print("Attempted 5 times and failed")
+
+# NESTED LOOP
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
