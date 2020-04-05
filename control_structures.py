@@ -8,3 +8,9 @@ elif temperature > 33:
 else:
     print('Naah...')
 # print("Please take a rest.")
+
+# Ternary operator
+age = 22
+is_eligible = "Yes" if age >= 18 else "No"
+
+print(f"Your eligible fo scholar: {is_eligible}")
