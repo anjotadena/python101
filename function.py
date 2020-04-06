@@ -22,3 +22,8 @@ def increment(number, by):
 result = increment(2, by=1)
 
 print(f"Increment result: {result}")
+
+def decrement(number, by=1): # Optional parameter
+    return number - by
+
+print(f"Decrement result with default parameter value: {decrement(2)}")
