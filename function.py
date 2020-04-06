@@ -14,3 +14,11 @@ def get_greeting(name):
 
 
 print(get_greeting("Anjo"))
+
+def increment(number, by):
+    return number + by
+
+# result = increment(2, 1)
+result = increment(2, by=1)
+
+print(f"Increment result: {result}")
