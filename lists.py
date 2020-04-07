@@ -34,3 +34,9 @@ third = numbers[3]
 first, second, third = numbers # Must be equal size
 first, *other_number = numbers # Packing all other in separate list
 first, *other, last = numbers # Unpacking first and last item
+
+# Looping over list
+
+for index, letter in enumerate(letters):
+    # print(letters) (index, value)
+    print(index, letter)
