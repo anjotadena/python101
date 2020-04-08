@@ -120,3 +120,14 @@ print(new_prices)
 filtered_items = filter(lambda item: item[1] >= 10, items)
 
 print(list(filtered_items))
+
+# List Comprehensions
+# [expression for item in items]
+
+# MAP
+prices = [item[1] for item in items]
+print(prices)
+
+# FILTER
+filtered_items = [item for item in items if item[1] >= 10]
+print(filtered_items)
