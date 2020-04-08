@@ -28,7 +28,7 @@ print(numbers[::-1]) # Reverse a list
 numbers = [1, 2, 3]
 first = numbers[0]
 second = numbers[1]
-third = numbers[3]
+third = numbers[2]
 
 # Unpacking lists
 first, second, third = numbers # Must be equal size
@@ -40,3 +40,29 @@ first, *other, last = numbers # Unpacking first and last item
 for index, letter in enumerate(letters):
     # print(letters) (index, value)
     print(index, letter)
+
+todos = []
+
+# Add item
+todos.append('Study python')
+print(todos)
+
+# Add item to the specific index
+todos.insert(0, 'Study PHP')
+print(todos)
+
+# Remove item
+todos.pop(0) # remove 1 item by index
+print(todos)
+
+todos.remove('Study python') # First occurring will be removed
+
+print(todos)
+
+# Removed items starting from index 0
+# del todos[0:2] 
+
+# remove all items
+todos.clear()
+
+
