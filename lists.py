@@ -82,3 +82,17 @@ numbers = [3, 51, 2, 8, 6]
 print(sorted(numbers, reverse=True))
 
 print(numbers)
+
+items = [
+    ("Product1", 10),
+    ("Product2", 3),
+    ("Product3", 1),
+    ("Product4", 6),
+]
+
+def sort_item(item):
+    return item[1]
+
+items.sort(key=sort_item)
+
+print(items)
