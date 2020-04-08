@@ -116,3 +116,7 @@ new_prices = list(map(lambda item: item[1], items))
 #     print(p)
 
 print(new_prices)
+
+filtered_items = filter(lambda item: item[1] >= 10, items)
+
+print(list(filtered_items))
