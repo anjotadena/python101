@@ -66,3 +66,10 @@ print(todos)
 todos.clear()
 
 
+# Finding item
+
+letters = ["a", "b", "c"]
+
+if "d" in letters:
+    print(letters.index("d"))
+
