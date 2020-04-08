@@ -101,3 +101,18 @@ items.sort(key=sort_item)
 items.sort(key=lambda item:item[1])
 
 print(items)
+
+# Map function
+prices = []
+
+# for item in items:
+#     prices.append(item[1])
+
+# print(prices)
+new_prices = list(map(lambda item: item[1], items))
+
+# print(new_prices)
+# for p in new_prices:
+#     print(p)
+
+print(new_prices)
