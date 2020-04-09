@@ -1,4 +1,6 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
+
+# Abstrac: is a contruct
 
 class InvalidOperationError(Exception):
     pass
@@ -16,6 +18,10 @@ class Stream(ABC):
         if not self.opened:
             raise InvalidOperationError("Cannot do this operation. Stream already closed.")
         self.opened = False
+    
+    @abstractmethod
+    def read(self):
+        pass
 
 class FileStream(Stream):
     def read(self):
