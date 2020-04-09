@@ -1,7 +1,9 @@
+from abc import ABC, abstractclassmethod
+
 class InvalidOperationError(Exception):
     pass
 
-class Stream:
+class Stream(ABC):
     def __init__(self):
         self.opened = False
 
