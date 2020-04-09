@@ -15,6 +15,8 @@ class Point:
         self.x = x
         self.y = y
 
+        self.__p = 10 # Private attribute
+
     # Methods - a function inside a class
     def draw(self):
         print(f"Point coordinate: x: {self.x}, y: {self.y}")
