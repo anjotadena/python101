@@ -40,3 +40,28 @@ print(f"Default color: {point.default_color}")
 
 point = Point.zero()
 point.draw()
+
+
+class Product:
+    def __init__(self, price):
+        self.__price = price
+
+    @property
+    def price(self):
+        return self.__price
+
+    @price.setter
+    def price(self, value):
+        if value < 0:
+            raise ValueError("Value cannot be negative.")
+        self.__price = value
+
+product = Product(10)
+
+print(product.price)
+
+product.price = 100
+print(product.price)
+
+# Throw value error exception
+product.price = -10
